@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ac_bridge_equation5"
+    style="@style/BackgroundLayout"
+    android:padding="5dp"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        style="@style/TextViewDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/detail_border"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Persamaan Jembatan Scheering"
+        android:textStyle="bold" />
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="• Zx = Z2.Z3.Y1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="• Rx - j/𝜔Cx = R2(-j/𝜔C3)(1/R1 + j𝜔C1)" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="• Rx - j/𝜔Cx = R2.C1/C3 - j.R2/𝜔.C3.R1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout"
+        android:layout_marginBottom="10dp">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="Bagian nyata :" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="• Rx = R2.C1/C3" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout" >
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="Bagian khayal :" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="• Cx = C3.R1/R2" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="Faktor Daya (D) :"/>
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="• PF ≅ Rx/Xx = 𝜔Cx.Rx"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="Faktor Disipasi (D) :"/>
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="• D = Rx/Xx = 𝜔.R1.C1"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        style="@style/TextViewDetail"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/detail_border"
+        android:text="Perhitungan Jembatan Scheering"
+        android:textStyle="bold"/>
+
+    <TextView
+        style="@style/TextViewDetail"
+        android:layout_marginBottom="5dp"
+        android:text="Mencari Rx, Cx, Faktor Daya, dan Faktor Disipasi :"/>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text="R1 : " />
+
+            <EditText
+                android:id="@+id/edt_R1_scheering"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi 1"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text="  Ω" />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="R2 :" />
+
+            <EditText
+                android:id="@+id/edt_R2_scheering"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi 2"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text="  Ω" />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="C1 :" />
+
+            <EditText
+                android:id="@+id/edt_C1_scheering"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Kapasitansi 1"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text="  F" />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="C3 :" />
+
+            <EditText
+                android:id="@+id/edt_C3_scheering"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Kapasitansi 3"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text="  F" />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="f :" />
+
+            <EditText
+                android:id="@+id/edt_f_scheering"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Frekuensi Osilator"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Hz " />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="80dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nilai Rx :" />
+
+            <TextView
+                android:id="@+id/tv_Rx_scheering_result"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:text=" " />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω  " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="80dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nilai Cx :" />
+
+            <TextView
+                android:id="@+id/tv_Cx_scheering_result"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:text=" " />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" F  " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="80dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nilai PF :" />
+
+            <TextView
+                android:id="@+id/tv_PF_scheering_result"
+                style="@style/TextViewDetail"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text=" " />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="80dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nilai D :" />
+
+            <TextView
+                android:id="@+id/tv_D_scheering_result"
+                style="@style/TextViewDetail"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text=" " />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <Button
+                android:id="@+id/btn_scheering_calculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Hitung"
+                android:layout_marginEnd="10dp" />
+
+            <Button
+                android:id="@+id/btn_scheering_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Hapus"
+                android:layout_marginStart="10dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

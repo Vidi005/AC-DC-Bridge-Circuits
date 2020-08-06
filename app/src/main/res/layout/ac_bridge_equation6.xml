@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ac_bridge_equation6"
+    style="@style/BackgroundLayout"
+    android:padding="5dp"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        style="@style/TextViewDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/detail_border"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Persamaan Jembatan Wien"
+        android:textStyle="bold" />
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="@string/wien_info_equation1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="• Z1 = R1 - j/𝜔C1" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="• Y3 = 1/R1 + j/𝜔C3" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="menghasilkan :" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="• R2 = (R1 - j/C1)R4(1/R3 + j𝜔C3)" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="• R2 = R1.R4/R3 + j𝜔C3.R1.R4 - jR4/𝜔C1.R3 + R4.C3/C1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="• R2 = R1.R4/R3 + R4.C3/C1" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="• R2 = R1/R3 + C3/C1" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout"
+        android:layout_marginBottom="10dp">
+
+        <TableRow
+            style="@style/BackgroundLayout" >
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="• 𝜔C3.R1.R4 = R4/𝜔C1.R3" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="Dimana 𝜔 = 2𝜋f sehingga :"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="@string/wien_equation8"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="@string/wien_info_equation4"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="• f = 1/2𝜋RC"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        style="@style/TextViewDetail"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/detail_border"
+        android:text="Perhitungan Jembatan Wien"
+        android:textStyle="bold"/>
+
+    <TextView
+        style="@style/TextViewDetail"
+        android:layout_marginBottom="5dp"
+        android:text="Mencari Frekuensi :"/>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text="R1 : " />
+
+            <EditText
+                android:id="@+id/edt_R1_wien"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi 1"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="R3 :" />
+
+            <EditText
+                android:id="@+id/edt_R3_wien"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi 3"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="C1 :" />
+
+            <EditText
+                android:id="@+id/edt_C1_wien"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Kapasitansi 1"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" F " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="C3 :" />
+
+            <EditText
+                android:id="@+id/edt_C3_wien"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Kapasitansi 3"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" F " />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="80dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nilai f :" />
+
+            <TextView
+                android:id="@+id/tv_f_wien_result"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:text=" " />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Hz " />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <Button
+                android:id="@+id/btn_wien_calculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Hitung"
+                android:layout_marginEnd="10dp" />
+
+            <Button
+                android:id="@+id/btn_wien_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Hapus"
+                android:layout_marginStart="10dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

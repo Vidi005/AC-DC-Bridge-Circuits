@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ac_bridge_equation2"
+    style="@style/BackgroundLayout"
+    android:padding="5dp"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        style="@style/TextViewDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/detail_border"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Persamaan Jembatan Pembanding Induktansi"
+        android:textStyle="bold" />
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="• Z1 = R1" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="• Z2 = R2" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="• Z3 = Rs + j𝜔Ls"/>
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="• Z4 = Rx + j𝜔Lx"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="• R1(Rx + j𝜔Lx) = R2(Rs + j𝜔Ls)" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="• R1.Rx + j.R1.𝜔.Lx = R2.Rs + j.R2.𝜔.Ls" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout"
+        android:layout_marginBottom="10dp">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="Bagian nyata :" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="• Rx = Rs.R2/R1" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout" >
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="Bagian khayal :" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="• Lx = Ls.R2/R1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        style="@style/TextViewDetail"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/detail_border"
+        android:text="Perhitungan Jembatan Pembanding Induktansi"
+        android:textStyle="bold"/>
+
+    <TextView
+        style="@style/TextViewDetail"
+        android:layout_marginBottom="5dp"
+        android:text="Mencari Rx :"/>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text="R1 : " />
+
+            <EditText
+                android:id="@+id/edt_R1_real_ind_comp"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi 1"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="R2 :" />
+
+            <EditText
+                android:id="@+id/edt_R2_real_ind_comp"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi 2"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="Rs :" />
+
+            <EditText
+                android:id="@+id/edt_Rs_real_ind_comp"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi s"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="80dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nilai Rx :" />
+
+            <TextView
+                android:id="@+id/tv_Rx_ind_comp_result"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:text=" " />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <Button
+                android:id="@+id/btn_Rx_ind_comp_calculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Hitung"
+                android:layout_marginEnd="10dp" />
+
+            <Button
+                android:id="@+id/btn_real_ind_comp_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Hapus"
+                android:layout_marginStart="10dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        style="@style/TextViewDetail"
+        android:layout_marginBottom="5dp"
+        android:text="Mencari Lx :"/>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="R1 :" />
+
+            <EditText
+                android:id="@+id/edt_R1_im_ind_comp"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi 1"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text="R2 : " />
+
+            <EditText
+                android:id="@+id/edt_R2_im_ind_comp"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi 2"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="Ls :" />
+
+            <EditText
+                android:id="@+id/edt_Ls_im_ind_comp"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Induktansi s"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" H " />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_width="80dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nilai Lx :" />
+
+            <TextView
+                android:id="@+id/tv_Lx_ind_comp_result"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:text=" " />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" H " />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <Button
+                android:id="@+id/btn_Lx_ind_comp_calculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Hitung"
+                android:layout_marginEnd="10dp" />
+
+            <Button
+                android:id="@+id/btn_im_ind_comp_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Hapus"
+                android:layout_marginStart="10dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

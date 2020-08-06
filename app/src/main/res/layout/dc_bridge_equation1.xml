@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dc_bridge_equation1"
+    style="@style/BackgroundLayout"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        style="@style/TextViewDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/detail_border"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Persamaan Jembatan Wheatstone"
+        android:textStyle="bold" />
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="Jembatan dikatakan setimbang jika :" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="• I1.R1 = I2.R2" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="• I1 = I3 = E/(R1 + R3)" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="• I2 = I4 = E/(R2 + R4)" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="• R1/(R1+R3) = R2/(R2+4)" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="@string/wheatstone_info_equation2" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="• R1.R4 = R2.R3" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="@string/wheatstone_info_equation3" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="• Rx = R3.R2/R1" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:background="@drawable/iv_border"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:src="@drawable/wheatstone_thevenin"
+            tools:src="@android:color/background_dark"/>
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout"
+        android:layout_marginBottom="10dp">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="@string/wheatstone_info_equation4" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="• Ecd = Eac - Ead = I1.R1 - I2.R2" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="Sehingga :" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="@string/wheatstone_equation8" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="Tahanan Thevenin :" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="@string/wheatstone_equation9" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="Arus Galvanometer :" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="@string/wheatstone_equation10" />
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:padding="5dp"
+                android:text="Dengan Rg adalah tahanan Galvanometer" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/equation_title"
+        style="@style/TextViewDetail"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/detail_border"
+        android:text="Perhitungan Jembatan Wheatstone"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/equilibrium_condition"
+        style="@style/TextViewDetail"
+        android:layout_marginBottom="5dp"
+        android:text="Mencari Kesetimbangan :"/>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                android:id="@+id/tv_R1"
+                style="@style/TextViewDetail"
+                android:text="R1 : " />
+
+            <EditText
+                android:id="@+id/edt_R1"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi 1"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                android:id="@+id/tv_R2"
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="R2 :" />
+
+            <EditText
+                android:id="@+id/edt_R2"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi 2"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                android:id="@+id/tv_R3"
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="R3 :" />
+
+            <EditText
+                android:id="@+id/edt_R3"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi 3"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                android:id="@+id/tv_Rx_value"
+                style="@style/TextViewDetail"
+                android:layout_width="80dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nilai Rx :" />
+
+            <TextView
+                android:id="@+id/tv_Rx_result"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:text=" " />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <Button
+                android:id="@+id/btn_Rx_calculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Hitung"
+                android:layout_marginEnd="10dp" />
+
+            <Button
+                android:id="@+id/btn_Rx_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Hapus"
+                android:layout_marginStart="10dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/not_balanced_condition"
+        style="@style/TextViewDetail"
+        android:layout_marginBottom="5dp"
+        android:text="Kondisi tidak Setimbang :"/>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                android:id="@+id/tv_E"
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="E :" />
+
+            <EditText
+                android:id="@+id/edt_E_wheatstone"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Tegangan Sumber DC"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" V " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                android:id="@+id/tv_R1_not_balanced_wheatstone"
+                style="@style/TextViewDetail"
+                android:text="R1 : " />
+
+            <EditText
+                android:id="@+id/edt_R1_not_balanced_wheatstone"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi 1"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                android:id="@+id/tv_R2_not_balanced"
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="R2 :" />
+
+            <EditText
+                android:id="@+id/edt_R2_not_balanced_wheatstone"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi 2"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                android:id="@+id/tv_R3_not_balanced"
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="R3 :" />
+
+            <EditText
+                android:id="@+id/edt_R3_not_balanced_wheatstone"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi 3"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                android:id="@+id/tv_R4_not_balanced"
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="R4 :" />
+
+            <EditText
+                android:id="@+id/edt_R4_not_balanced_wheatstone"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi 4"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                android:id="@+id/tv_Rg_not_balanced"
+                style="@style/TextViewDetail"
+                android:layout_width="40dp"
+                android:text="Rg :" />
+
+            <EditText
+                android:id="@+id/edt_Rg_not_balanced_wheatstone"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:autofillHints="Input Nilai Resistansi Galvanometer"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                android:id="@+id/tv_Eth_value"
+                style="@style/TextViewDetail"
+                android:layout_width="80dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nilai Eth :" />
+
+            <TextView
+                android:id="@+id/tv_Eth_result"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:text=" " />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" V " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                android:id="@+id/tv_Rth_value"
+                style="@style/TextViewDetail"
+                android:layout_width="80dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nilai Rth :" />
+
+            <TextView
+                android:id="@+id/tv_Rth_result"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:text=" " />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" Ω " />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <TextView
+                android:id="@+id/tv_Ig_value"
+                style="@style/TextViewDetail"
+                android:layout_width="80dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:text="Nilai Ig :" />
+
+            <TextView
+                android:id="@+id/tv_Ig_result"
+                style="@style/TextViewDetail"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:text=" " />
+
+            <TextView
+                style="@style/TextViewDetail"
+                android:text=" A " />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/BackgroundLayout">
+
+        <TableRow
+            style="@style/BackgroundLayout">
+
+            <Button
+                android:id="@+id/btn_calculate_wheatstone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Hitung"
+                android:layout_marginEnd="10dp" />
+
+            <Button
+                android:id="@+id/btn_clear_wheatstone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Hapus"
+                android:layout_marginStart="10dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

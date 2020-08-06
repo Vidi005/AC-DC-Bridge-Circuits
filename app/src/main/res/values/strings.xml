@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">AC &amp; DC Bridge Circuits</string>
+    <string name="ac_bridge_circuits">AC BRIDGE CIRCUITS</string>
+    <string name="id_ac_bridge_circuits">(Rangkaian Jembatan Arus AC)</string>
+    <string name="dc_bridge_circuits">DC BRIDGE CIRCUITS</string>
+    <string name="id_dc_bridge_circuits">(Rangkaian Jembatan Arus DC)</string>
+    <string name="tv_about_title"><![CDATA[AC & DC Bridge Circuits]]></string>
+    <string name="tv_about_description">Aplikasi ini dibuat untuk membantu perhitungan dari berbagai macam jenis rangkaian jembatan arus bolak-balik dan rangkaian jembatan arus searah</string>
+    <string name="tv_about_version">Versi 1.0</string>
+    <string name="tv_about_author">Vidi Fitriansyah Hidarlan</string>
+    <string name="ac_bridges_item">AC Bridges</string>
+    <string name="detail_ac_bridges_item">Detail AC Bridges</string>
+    <string name="dc_bridges_item">DC Bridges</string>
+    <string name="detail_dc_bridges_item">Detail DC Bridges</string>
+    <string name="ac_bridges_name">AC Bridges Name</string>
+    <string name="ac_bridge_detail">AC Bridge Detail</string>
+    <string name="dc_bridges_name">DC Bridges Name</string>
+    <string name="dc_bridge_detail">DC Bridge Detail</string>
+    <string name="hay_equation8">• Rx = (𝜔.C1)<sup>2</sup>.R1.R2.R3 / {1 + (𝜔.C1.R1)<sup>2</sup>}</string>
+    <string name="hay_equation10">• Lx = R2.R3.C1 / {1 + (𝜔.C1.R1)<sup>2</sup>}</string>
+    <string name="hay_equation12">• tan 𝜃<sub>L</sub> = X<sub>L</sub>/R = 𝜔Lx/Rx = Q</string>
+    <string name="hay_equation13">• tan 𝜃<sub>C</sub> = Xc/R = 1/𝜔.C1.R1</string>
+    <string name="hay_equation11">• ∠𝜃<sub>1</sub> + ∠𝜃<sub>3</sub> = ∠𝜃<sub>2</sub> + ∠𝜃<sub>4</sub></string>
+    <string name="hay_equation14">• tan 𝜃<sub>L</sub> = tan 𝜃<sub>C</sub></string>
+    <string name="hay_equation15">• Q = 1/𝜔.C1.R1</string>
+    <string name="hay_equation16">• Lx = R<sub>2</sub>.R<sub>3</sub>.C<sub>1</sub> / {1 + (1/Q)<sup>2</sup>}</string>
+    <string name="wien_info_equation1">Dengan memasukan persamaan berikut ke persamaan dasar jembatan AC :</string>
+    <string name="wien_equation8">• f = 1/{2𝜋(C1.C3.R1.R3)<sup>2</sup>}</string>
+    <string name="wien_info_equation4">Dengan R1-R3 dan C1-C3 menjadikan R2/R4 = 2 dan persamaan frekuensi jembatan Wien menjadi :</string>
+    <string name="wheatstone_info_equation2">Persamaan kesetimbangan Jembatan Wheatstone :</string>
+    <string name="wheatstone_info_equation3">Jika R4 tidak diketahui maka tahanan Rx dapat dinyatakan :</string>
+    <string name="wheatstone_info_equation4">Tegangan Thevenin atau tegangan rangkaian terbuka diperoleh dengan :</string>
+    <string name="wheatstone_equation8">• Ecd = E<sub>TH</sub> = E{R1/(R1+R3) - (R2/(R2+R4))}</string>
+    <string name="wheatstone_equation9">• R<sub>TH</sub> = R1.R3/(R1+R3) + R2.R4/(R2+R4)</string>
+    <string name="wheatstone_equation10">• Ig = E<sub>TH</sub> / (R<sub>TH</sub>+Rg)</string>
+    <string name="kelvin_info_equation1">perbandingan tahanan dari n ke p dan dari m ke p :</string>
+    <string name="kelvin_info_equation2">Persamaan kesetimbangan Jembatan Kelvin</string>
+    <string name="kelvin_info_equation3">Penunjukkan galvanometer akan nol bila potensial pada k sama dengan potensial pada p; atau Ekl=Elmp, dimana :</string>
+    <string name="logo_title"><![CDATA[AC & DC Bridge Circuits]]></string>
+
+    <string-array name="ac_bridge_picture">
+        <item>@drawable/ac_bridge1</item>
+        <item>@drawable/ac_bridge2</item>
+        <item>@drawable/ac_bridge3</item>
+        <item>@drawable/ac_bridge4</item>
+        <item>@drawable/ac_bridge5</item>
+        <item>@drawable/ac_bridge6</item>
+    </string-array>
+
+    <string-array name="ac_bridge_name">
+        <item>Jembatan Pembanding Kapasitansi</item>
+        <item>Jembatan Pembanding Induktansi</item>
+        <item>Jembatan Maxwell</item>
+        <item>Jembatan Hay</item>
+        <item>Jembatan Scheering</item>
+        <item>Jembatan Wien</item>
+    </string-array>
+
+    <string-array name="ac_bridge_detail">
+        <item>Jembatan pembanding kapasitansi digunakan untuk pengukuran kapasitansi yang tidak diketahui,
+            dengan cara membandingkannya terhadap sebuah kapasitansi yang diketahui.</item>
+        <item>Jembatan pembanding induktansi mirip dengan jembatan pembanding kapasitansi.
+            Induktansi yang tidak diketahui ditentukan dengan membandingkan terhadap sebuah induktor standar yang diketahui
+            seperti yang diunjukkan pada diagram gambar.</item>
+        <item>Jembatan Maxwell mengukur sebuah induktansi yang tidak diketahui dinyatakan dalam kapasitansi yang diketahui.
+            Pada gambar, ditunjukkan rangkaian jembatan Maxwell,
+            dimana salah satu lengan pembanding mempunyai sebuah tahanan yang dihubung paralel dengan sebuah kapasitansi.</item>
+        <item>Jembatan hay, digunakan untuk mengukur sebuah induktansi yang tidak diketahui, yang dinyatakan dalam kapasitansi yang diketahui.
+            Pada gambar, ditunjukkan rangkaian jembatan Hay yang berbeda dari jembatan Maxwell, dimana tahanan R1 dihubungkan seri dengan kapasitor C1.
+            Jembatan Hay digunakan untun pengukuran Q tinggi, terutama yang mempunyai Q lebih besar dari 10.</item>
+        <item>Jembatan yang digunakan untuk pengukuran kapasitor dan mengukur sifat-sifat isolasi pada sudut fasa yang mendekati 90o.
+            Syarat kesetimbangan jembatannya adalah jumlah sudut fasa lengan 1 dan lengan 4 sama dengan
+            jumlah sudut fasa lengan 2 dan lengan 3.</item>
+        <item>Jembatan yang digunakan untuk mengukur frekuensi dan berbagai rangkaian bermanfaat lainnya.
+            Misalnya penganalisa distorsi harmonik sebagai saringan pencatat yang membedakan terhadap satu frekuensi tertentu.</item>
+    </string-array>
+
+    <string-array name="ac_bridge_equation">
+        <item>@layout/ac_bridge_equation1</item>
+        <item>@layout/ac_bridge_equation2</item>
+        <item>@layout/ac_bridge_equation3</item>
+        <item>@layout/ac_bridge_equation4</item>
+        <item>@layout/ac_bridge_equation5</item>
+        <item>@layout/ac_bridge_equation6</item>
+    </string-array>
+
+    <string-array name="dc_bridge_picture">
+        <item>@drawable/dc_bridge1</item>
+        <item>@drawable/dc_bridge2</item>
+    </string-array>
+
+    <string-array name="dc_bridge_name">
+        <item>Jembatan Wheatstone</item>
+        <item>Jembatan Kelvin</item>
+    </string-array>
+
+    <string-array name="dc_bridge_detail">
+        <item>Jembatan Wheatstone digunakan untuk pengkuran tahanan tinggi sekitar 1 Ω sampai satuan mega ohm (MΩ)
+            dengan tingkat ketelitian (presisi) yang tinggi. Rangkaian jembatan ini terdiri dari 4 buah tahanan dan
+            sebuah Galvanometer. Rangkaian diberi catu daya DC sebesar E Volt. Jembatan dikatakan setimbang jika
+            potensial pada Galvanometer sama dengan nol, artinya tidak ada arus yang mengalir melalui Galvanometer.</item>
+        <item>Jembatan Kelvin merupakan modifikasi dari jembatan Wheatstone den menghasilkan ketelitian yang jauh lebih besar
+            dalam pengukuran tahanan-tahanan rendah (low values resistances), umumnya dibawah 1 Ω.</item>
+    </string-array>
+
+    <string-array name="dc_bridge_equation">
+        <item>@layout/dc_bridge_equation1</item>
+        <item>@layout/dc_bridge_equation2</item>
+    </string-array>
+
+</resources>
