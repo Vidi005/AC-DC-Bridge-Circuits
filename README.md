@@ -17,6 +17,10 @@ Aplikasi ini berisi teori serta perhitungan macam-macam jembatan arus AC da DC
 
 Screenshots:
 <p align="center">
-  <img src="https://github.com/Vidi005/Github-User-App/blob/master/Application/Submission 1/Screenshot_1.png" width="240" height="427"> 
-  <img src="https://github.com/Vidi005/Github-User-App/blob/master/Application/Submission 1/Screenshot_2.png" width="240" height="427">
+  <img src="https://github.com/Vidi005/AC-DC-Bridge-Circuits/blob/master/Screenshots/Screenshot_2020-08-06-14-11-37-39.png" width="240" height="427"> 
+  <img src="https://github.com/Vidi005/AC-DC-Bridge-Circuits/blob/master/Screenshots/Screenshot_2020-08-06-14-11-42-13.png" width="240" height="427">
+  <img src="https://github.com/Vidi005/AC-DC-Bridge-Circuits/blob/master/Screenshots/Screenshot_2020-08-06-14-12-02-47.png" width="240" height="427">
+  <img src="https://github.com/Vidi005/AC-DC-Bridge-Circuits/blob/master/Screenshots/Screenshot_2020-08-06-14-12-15-27.png" width="240" height="427">
+  <img src="https://github.com/Vidi005/AC-DC-Bridge-Circuits/blob/master/Screenshots/Screenshot_2020-08-06-14-13-43-61.png" width="240" height="427">
+  <img src="https://github.com/Vidi005/AC-DC-Bridge-Circuits/blob/master/Screenshots/Screenshot_2020-08-06-14-13-51-55.png" width="240" height="427">
 </p>
