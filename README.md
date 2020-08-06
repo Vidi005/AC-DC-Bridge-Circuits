@@ -10,10 +10,10 @@ Aplikasi ini berisi teori serta perhitungan macam-macam jembatan arus AC da DC
 #### Features:
 1. List AC & DC Bridge Circuits
 2. Detail AC & DC Bridge Circuits
-  a. Images
-  b. Descriptions
-  c. Equations
-  d. Calculators
+  1) Images
+  2) Descriptions
+  3) Equations
+  4) Calculators
 
 Screenshots:
 <p align="center">
